@@ -1,6 +1,4 @@
-#Sistema de atendimento de uma clínica
-#Feito pelo "Grupo CTRL Z na vida real"/Lucas Verissimo, Kelvens Alves, Bryan Lessa, Yuri Quites e Caio Azevedo
-#Versão 10.0
+
 
 import json
 import os
@@ -764,6 +762,9 @@ def main():
         cadastrar()
     else:
         print("A sua resposta é inválida")
+        print("Carregando...")
+        time.sleep(2.5)
+        main()
 main()
 
 
